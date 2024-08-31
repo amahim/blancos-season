@@ -1,37 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blancos Season</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blancos</title>
     <!-- tailwind/daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- script -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-      <!-- font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <style>
-        .font-poppins{
-            font-family: "Poppins", sans-serif;
-        }
-      </style>
-</head>
-<body class="font-poppins">
-    
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-new{
+        font-family: "New Amsterdam", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-poppins shadow bg-gradient-to-r from-blue-500 to-cyan-500 ...">
+    <header class="shadow">
+      <!-- navbar -->
+      <nav class="w-4/5 mx-auto">
+        <div class="navbar flex justify-between items-center">
+          <div class="">
+            <h3 class="text-black dark:text-black font-new text-3xl ">Blancos</h3>
+          </div>
+          <!-- navright -->
+          <div class="flex gap-5">
+            <div class="hidden md:block">
+              <ul class="flex gap-10 text-black dark:text-black">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-black dark:text-black"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content rounded-box z-[1] text-black dark:text-black bg-gray-100"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="season1.html">Season One</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pb-10">
+        <!-- format sec -->
+         <section class="my-10 flex md:flex-row flex-col w-4/5 mx-auto gap-10 md:gap-0 md:justify-between">
+            <!-- season format -->
+            <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400 ... shadow-xl w-full md:w-[49%] rounded-xl">
+                <div class="py-2">
+                    <h3 class="text-center font-new text-black dark:text-black text-3xl">Season Format</h3>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-2 px-10 py-5">
+                    <p class="text-black dark:text-black font-medium text-2xl">5 Tournaments</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Main Squad</li>
+                        <li>- Main Squad</li>
+                        <li>- Authentic Club</li>
+                        <li>- Authentic National</li>
+                        <li>- Co-Op</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- bdor format -->
+            <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400 ... shadow-xl w-full md:w-[49%] rounded-xl">
+                <div class="py-2">
+                    <h3 class="text-center font-new text-black dark:text-black text-3xl">Ballon D'or Criteria</h3>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-2 px-10 py-5">
+                    <p class="text-black dark:text-black font-medium text-2xl">One Season Based</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Tour Champion: 3 pts</li>
+                        <li>- Tour Runner up: 1 pts</li>
+                        <li>- Tour Golden Boot: 2 pts</li>
+                        <li>- Tour Golden Gloves: 1 pts</li>
+                    </ul>
+                </div>
+            </div>
+         </section>
+        <!-- line -->
+          <hr>
+          <div class="py-2"><h3 class="text-black dark:text-black font-new text-3xl text-center md:text-4xl">Rules</h3></div>
+          <hr>
+          <!--  -->
+          <section class="my-10 flex md:flex-row flex-col w-4/5 mx-auto gap-10 md:gap-0 md:justify-between">
+            <!-- 4/5 team format -->
+            <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400 ... shadow-xl w-full md:w-[49%] rounded-xl">
+                <div class="py-2">
+                    <h3 class="text-center font-new text-black dark:text-black text-3xl">4 Teams/5 Teams</h3>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Group Stage</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Time: 8 mnt</li>
+                        <li>- No et/pen</li>
+                        <li>- 2 leg</li>
+                        <li>- Top 2 in the final</li>
+                        <li>- Condition: Excellent</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Final</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Time: 8 mnt</li>
+                        <li>- Et/pen</li>
+                        <li>- 1 leg</li>
+                        <li>- Condition: Excellent</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Dissconnection Issue</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Play the remaining minutes</li>
+                        <li>- Discussion with host</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 6/7 team format -->
+            <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400 ... shadow-xl w-full md:w-[49%] rounded-xl">
+                <div class="py-2">
+                    <h3 class="text-center font-new text-black dark:text-black text-3xl">6 Teams/7 Teams</h3>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Group Stage</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Time: 8 mnt</li>
+                        <li>- No et/pen</li>
+                        <li>- 1 leg</li>
+                        <li>- Top 4 in the Semi final</li>
+                        <li>- Condition: Excellent</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Semi Final</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- No 1 vs No 4</li>
+                        <li>- No 2 vs No 3</li>
+                        <li>- Time: 8 mnt</li>
+                        <li>- No et/pen</li>
+                        <li>- 2 leg</li>
+                        <li>- If all Equal: Golden Goal</li>
+                        <li>- Condition: Excellent</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Final</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Time: 8 mnt</li>
+                        <li>- Et/pen</li>
+                        <li>- 1 leg</li>
+                        <li>- Condition: Excellent</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2 px-10 py-2">
+                    <p class="text-black dark:text-black font-medium text-xl">Dissconnection Issue</p>
+                    <ul class="text-black dark:text-black">
+                        <li>- Play the remaining minutes</li>
+                        <li>- Discussion with host</li>
+                    </ul>
+                </div>
+            </div>
+          </section>
+          <!-- line -->
+          <hr>
+          <div class="py-2"><h3 class="text-black dark:text-black font-new text-3xl text-center md:text-4xl">Links</h3></div>
+          <hr>
+          <section class="my-10 w-4/5 mx-auto">
+            <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-400 ...">
+                <ul class="text-black dark:text-black">
+                    <li>-Google Sheet:    <a href="https://docs.google.com/spreadsheets/d/1RUXDHmlKj4Z4zjd0dE48kn8jMRG3GYtPh4e9htD0MnI/edit" class="underline">view</a></li>
+                </ul>
+            </div>
+          </section>
+    </main>
+  </body>
 </html>
